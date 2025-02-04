@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Correct approach using DOM manipulation methods
+    const div = document.getElementById('myDiv');
+    const para1 = document.createElement('p');
+    const para2 = document.createElement('p');
+    para1.textContent = 'This is a paragraph.';
+    para2.textContent = 'This is another paragraph.';
+    div.appendChild(para1);
+    div.appendChild(para2);
+  </script>
+</body>
+</html>
